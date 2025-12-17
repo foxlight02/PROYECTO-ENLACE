@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Explicación de Enlaces</title>
+    </head>
+    <body>
+        <header>
+            <h1>1️⃣ Guía de ENLACES en HTML</h1>
+            <nav>
+                <ul>
+                    <li><a href="enlace-4/ULKIORA.html">Enlace a un archivo en otra carpeta</a></li>
+                    <li><a href="TOSEN.html" target="_blank">Abrir enlace en otra pestaña</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!--Definicion -->
+            <section id="definicion">
+                <h2>¿Qué es un enlace?</h2>
+                <p>
+                    El elemento <strong>&lt;a&gt;</strong> se usa para crear hipervínculos que permiten navegar a otra
+                    página, archivo, sección o recurso.
+                </p>
+            </section>
+
+            <aside>
+                <h3>Dato curioso</h3>
+                <p>Sin el atributo <code>href</code>, la etiqueta no funciona como un enlace.</p>
+            </aside>
+
+            <!--Enlace externos - interno -->
+            <section id="ejemplos">
+                <article>
+                    <h3>2️⃣Enlace Externo</h3>
+                    <p>-Para ir a Google: <a href="https://www.google.com">Haz clic aquí</a></p>
+                    <p>-Para ir a un enlace externo: <a href="BARRAGAN.html">Externo</a></p>
+                </article>
+
+                <article>
+                    <h3>3️⃣Enlace Interno</h3>
+                    <p>Para volver al inicio de esta sección: <a href="#definicion">Ir arriba</a></p>
+                </article>
+            </section>
+
+            <!-- FETCH -->
+            <section id="fetch">
+                <article>
+                    <h1> 4️⃣Enlace Fetch</h1>
+                    <p>
+                        Perfecto, hablemos claro de cómo funciona &lt;a&gt; y cómo se combina con fetch, porque aquí hay
+                        un detalle clave
+                    </p>
+                    <a href="#definicion">Ir arriba</a>
+                </article>
+            </section>
+
+            <!-- EJEMPLOS DE FETCH -->
+            <section>
+                <h4> ¿Cómo funciona normalmente &lt;a&gt;?: Un enlace HTML siempre navega a otra URL</h4>
+
+                <a href="TOSEN.html">Enlace sin cargaR pagina</a>
+
+                <p>📌 Al hacer clic:</p>
+
+                <ul>
+                    <li>El navegador cambia de página</li>
+                    <li>Se recarga el documento</li>
+                    <li>Se pierde el estado actual (JS, variables, etc.)</li>
+                </ul>
+                <p>Esto es comportamiento clásico.</p>
+
+                <h2> &lt;a&gt; + JavaScript (evitar recarga)</h2>
+                <p>Si quieres usar fetch sin recargar, debes bloquear el comportamiento del &lt;a&gt;:</p>
+
+                <a href="TOSEN.html" id="linkContacto">Contacto</a>
+
+                Ahora el &lt;a&gt; no navega.
+
+                <h2> &lt;a&gt; usando fetch (cargar contenido)</h2>
+                <p>Ejemplo típico tipo SPA (Single Page App):</p>
+
+                <a href="TOSEN.html" data-url="contacto.html" class="link">Contacto</a>
+
+                <p>📌 Qué pasa aquí:</p>
+                <ul>
+                    <li>El &lt;a&gt; no recarga</li>
+                    <li>fetch pide el archivo</li>
+                    <li>El HTML se inyecta en la página</li>
+                </ul>
+
+                <p>💡Esto es lo que hacen frameworks como React / Vue, pero a mano.</p>
+            </section>
+            
+            
+            <section>
+                <h1>5️⃣ Ruta Amigables .htaccess</h1>
+            </section>
+            
+              <section>
+                <h1> 6️⃣ Enlaces con parametr</h1>
+            </section>
+        </main>
+
+        <footer>
+            <p>Para volver al inicio: <a href="#definicion">Ir arriba</a></p>
+
+            <p>&copy; 2025 - Aprendiendo Desarrollo Web</p>
+        </footer>
+
+        <script href="STARKK.js"></script>
+    </body>
+</html>
