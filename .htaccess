@@ -1,0 +1,17 @@
+# Activar motor
+RewriteEngine On
+Options -Indexes
+
+
+
+# Quitar .html
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+DirectoryIndex AIZEN.html
+
+# Reglas personalizadas
+RewriteRule ^TOSEN$ TOSEN.html [NC,L]
+RewriteRule ^AIZEN$ AIZEN.html [NC,L]
+RewriteRule ^ULKIORA$ enlace-4/ULKIORA.html [NC,L]
+RewriteRule ^BARRAGAN$ BARRAGAN.html [NC,L]
